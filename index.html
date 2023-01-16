@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <img src="image/Vector.png">
+            <img src="image/Vector-blank.png">
         </header>
         
         <main class="principal">
@@ -18,17 +18,20 @@
 
         <div class="caja-contenedora" >
             
-            <textarea name="textarea" rows="30" cols="50" id="textarea"></textarea>
+            <textarea name="textarea" rows="30" cols="50" id="textarea" readonly="readonly"></textarea>
             <img src="image/Muñeco.png" id="imagen">
+            
         </div>
 
         <div class="texto-caja" >
             <h2 id="texto-caja">Ningun mensaje fue encontrado <p>Ingrese el texto que desees encriptar o desencriptar</p></h2> 
-            <button id="boton" style="display:none;" onclick="copy()">COPIAR</button>
+            <div><button id="boton" style="display:none;" onclick="copy()">COPIAR</button></div>
         </div>
 
+        <div></div>
+
         <div class="info">
-            <img src="image/info.png"><p>Solo letras minisculas y sin acento</p>
+            <img src="image/info-blank.png"><p>Solo letras minisculas y sin acento</p>
         </div>
 
         <div class="encriptar">
@@ -44,8 +47,11 @@
                  
             const frase = document.getElementById("ingreso-texto").value;
             const cadenaTxt = '^[a-z ,.!¡¿?_\n]+$';
+
+            if(frase.value == null){
+                    alert("Recuerde que debe ingresar un texto");
            
-                if(frase.match(cadenaTxt) !=null){
+            } else if(frase.match(cadenaTxt) !=null){
                 
                     const texto = frase
                         .replaceAll(/e/g, "enter")
@@ -58,6 +64,7 @@
                     document.getElementById("boton").style.display = "inline";
                     document.getElementById("textarea").style.display="inline"; 
                     document.getElementById("textarea").innerHTML = texto;
+                    document.getElementById("ingreso-texto").value ="";
                     
             }else{
 
@@ -67,11 +74,14 @@
         }
   
             function desencriptar(){
-   
+                
+                
                 const frase = document.getElementById("ingreso-texto").value;
                 const cadenaTxt = '^[a-z ,.!¡¿?_\n]+$';
-           
-                 if(frase.match(cadenaTxt) !=null){
+                
+                if(frase.value == null){
+                    alert("Recuerde que debe ingresar un texto");
+                }else if(frase.match(cadenaTxt) !=null){
                 
                     const texto = frase
                         .replaceAll(/enter/g, "e")

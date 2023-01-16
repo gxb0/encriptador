@@ -2,7 +2,7 @@ body{
     position: relative;
     width: 1440px;
     height: 600px;
-    background: #F3F5FC;
+    background-image: url(../image/que-es-seguridad-informatica.jpg);
 }
 
 header{
@@ -30,16 +30,16 @@ header{
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-    color: #0A3871;
+    color: #FFFFFF;
     border: 0;
-    background-color: #F3F5FC;
+    background-color: transparent;
     outline: none;
     resize: none;
     text-transform: lowercase;
 }
 
 .area-text::placeholder{
-    color: #0A3871;
+    color: #FFFFFF;
     
 }
 
@@ -52,6 +52,7 @@ header{
     background: #FFFFFF; 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    box-sizing: content-box;
 }
 
 .caja-contenedora textarea{
@@ -67,6 +68,7 @@ header{
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+    box-sizing: border-box;
     
 }
 
@@ -130,7 +132,7 @@ header{
     align-items: center;
     padding: 0px;
     gap: 8px;
-
+    color: #FFFFFF;
     position: absolute;
     width: 245px;
     height: 18px;
@@ -228,6 +230,14 @@ header{
         width: 375px;
         height: 933px;
     }
+
+    header{
+        position: absolute;
+        height: 96px;
+        left: 4.27%;
+        top: 5%;
+        bottom: 5%;
+    }
     .area-text{
         position: absolute;
         width: 343px;
@@ -246,9 +256,99 @@ header{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
        
     }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        position: absolute;
+        width: 245px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+
+    }
+
+    .caja-contenedora{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 270px;
+        height: 186px;
+        left: 13px;
+        top: 707px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .caja-contenedora textarea{
+        width: 279px;
+        height: 162px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #495057;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .caja-contenedora img{
+        display: none;
+    }
+    .texto-caja{
+        position: absolute;
+        width: 270px;
+        left: 44px;
+        top: 759px;
 }
+
+.texto-caja h2{
+    width: 263px;
+    height: 58px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;  
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+   
+    .texto-caja p{
+        width: 230px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        text-align: center;
+        margin: 10px auto;
+        }
+
+    }
 
     /*.principal{
         position: absolute;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="image/Vector.png">
+        </header>
+        
+        <main>
+
+            <textarea name="ingreso-texto" rows="15" cols="45"  id="ingreso-texto" class="area-text"  placeholder="Ingrese el texto aqui"></textarea>
+
+        <div class="caja-contenedora" >
+            
+            <textarea name="textarea" rows="30" cols="50" id="textarea"></textarea>
+            <img src="image/Muñeco.png" id="imagen">
+        </div>
+
+        <div class="texto-caja" >
+            <h2 id="texto-caja">Ningun mensaje fue encontrado <p>Ingrese el texto que desees encriptar o desencriptar</p></h2> 
+            <button id="boton" style="display:none;" onclick="copy()">COPIAR</button>
+        </div>
+
+        <div class="info">
+            <img src="image/info.png"><p>Solo letras minisculas y sin acento</p>
+        </div>
+
+        <div class="encriptar">
+            <button onclick="encriptar()"  class="button-encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="button-desencriptar">Desencriptar</button>  
+         </div>
+       
+        </main>
+
+        <script>  
+
+        function encriptar(){
+                 
+            const frase = document.getElementById("ingreso-texto").value;
+            const cadenaTxt = '^[a-z ,.!¡¿?_\n]+$';
+           
+                if(frase.match(cadenaTxt) !=null){
+                
+                    const texto = frase
+                        .replaceAll(/e/g, "enter")
+                        .replaceAll(/i/g, "imes")
+                        .replaceAll(/a/g, "ai")
+                        .replaceAll(/o/g, "ober")
+                        .replaceAll(/u/g, "ufat");
+                    document.getElementById("texto-caja").style.display = "none";
+                    document.getElementById("imagen").style.display = "none";
+                    document.getElementById("boton").style.display = "inline";
+                    document.getElementById("textarea").style.display="inline"; 
+                    document.getElementById("textarea").innerHTML = texto;
+                    
+            }else{
+
+                alert("Recuerde que no se permiten ni letras minusculas, ni acentos\nIngrese nuevamente el texto Por Favor");
+                document.getElementById("ingreso-texto").value = "";
+            }
+        }
+  
+            function desencriptar(){
+   
+                const frase = document.getElementById("ingreso-texto").value;
+                const cadenaTxt = '^[a-z ,.!¡¿?_\n]+$';
+           
+                 if(frase.match(cadenaTxt) !=null){
+                
+                    const texto = frase
+                        .replaceAll(/enter/g, "e")
+                        .replaceAll(/imes/g, "i")
+                        .replaceAll(/ai/g, "a")
+                        .replaceAll(/ober/g, "o")
+                        .replaceAll(/ufat/g, "u");
+          
+                document.getElementById("texto-caja").style.display = "none";
+                document.getElementById("imagen").style.display = "none";
+                document.getElementById("boton").style.display = "inline";
+                document.getElementById("textarea").style.display="inline"; 
+                document.getElementById("textarea").innerHTML = texto;
+            
+            }else{
+
+                alert("Recuerde que no se permiten ni letras minusculas, ni acentos\nIngrese nuevamente el texto Por Favor");
+                document.getElementById("ingreso-texto").value = "";
+            }
+                 
+        }
+
+          function copy(){ 
+            const content = document.getElementById("textarea");
+            document.execCommand("copy");
+            alert("¡Texto copiado con exito!");
+        }
+
+
+    </script>
+    </body>
+</html>
+    

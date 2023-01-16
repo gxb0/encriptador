@@ -96,6 +96,7 @@
 
           function copy(){ 
             const content = document.getElementById("textarea");
+            content.select();
             document.execCommand("copy");
             alert("¡Texto copiado con exito!");
         }

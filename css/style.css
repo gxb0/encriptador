@@ -212,3 +212,9 @@ cursor: pointer;
     background: #0A3871 ; 
     color: #D8DFE8;;
 }
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .area-text{
+        font-size: 32px;
+    }
+}

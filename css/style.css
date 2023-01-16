@@ -6,38 +6,36 @@ body{
 }
 
 header{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
 
-position: absolute;
-width: 120px;
-height: 48px;
-left: 40px;
-top: 40px;
-}
-
-
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+    }
 
 .area-text{
-position: absolute;
-width: 577px;
-height: 164px;
-left: 240px;
-top: 168px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 150%;
-color: #0A3871;
-border: 0;
-background-color: #F3F5FC;
-outline: none;
-resize: none;
-text-transform: lowercase;
+    position: absolute;
+    width: 577px;
+    height: 164px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #0A3871;
+    border: 0;
+    background-color: #F3F5FC;
+    outline: none;
+    resize: none;
+    text-transform: lowercase;
 }
 
 .area-text::placeholder{
@@ -81,32 +79,32 @@ text-transform: lowercase;
 }
 
 .texto-caja{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-position: absolute;
-width: 336px;
-height: 100px;
-left: 1090px;
-top: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 336px;
+    height: 100px;
+    left: 1090px;
+    top: 450px;
 }
 
 .texto-caja h2{
-width: 238px;
-height: 40px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 120%;
-text-align: center;
-color: #343A40;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    width: 238px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .texto-caja p{
@@ -127,46 +125,47 @@ flex-grow: 0;
 }
 
 .info{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
 
-position: absolute;
-width: 245px;
-height: 18px;
-left: 240px;
-top: 551px;
+    position: absolute;
+    width: 245px;
+    height: 18px;
+    left: 240px;
+    top: 551px;
 }
 
 .encriptar{
-display: flex;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-position: absolute;
-width: 680px;
-height: 67px;
-left: 240px;
-top: 600px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 600px;
 }
 
 .button-encriptar{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px 134px;
-gap: 8px;
-width: 328px;
-height: 67px;
-background: #0A3871;
-border-radius: 24px;
-flex: none;
-order: 0;
-flex-grow: 0;
-color: #FFFFFF;
-cursor: pointer;
+    /*display: flex;*/
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 134px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: 50%;
+    order: 0;
+    /*flex-grow: 0;*/
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .button-encriptar:hover{
@@ -176,21 +175,21 @@ cursor: pointer;
 }
 
 .button-desencriptar{
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px 134px;
-gap: 8px;
-width: 328px;
-height: 67px;
-background: #D8DFE8;
-border: 1px solid #0A3871;
-border-radius: 24px;
-flex: none;
-order: 1;
-flex-grow: 0;
-cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 134px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
 }
 
 .button-desencriptar:hover{
@@ -213,8 +212,179 @@ cursor: pointer;
     color: #D8DFE8;;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+/*@media (min-width: 768px) and (max-width: 1023px){
+    
+    body{
+        position: relative;
+        width: 768px;
+        height: 600px;
+    }*/
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+       
+    
+    body{
+        position: relative;
+        width: 375px;
+        height: 933px;
+    }
     .area-text{
+        position: absolute;
+        width: 343px;
+        height: 48px;
+        left: 16px;
+        top: 152px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
         font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+
+    .encriptar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
     }
 }
+
+    /*.principal{
+        position: absolute;
+        left: -78px;
+    }
+    
+    .area-text{
+        position: absolute;
+        width: 688px;
+        height: 48px;
+        top: 240px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+    
+    .area-text::placeholder{
+        font-size: 32px;
+    }
+
+    .caja-contenedora{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px; 
+        position: absolute;
+        width: 606px;
+        height: 100px;
+        left: 245px;
+        top: 1058px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .caja-contenedora img{
+        display: none;
+    
+    }
+    
+    .caja-contenedora textarea{     
+        width: 601px;
+        height: 100px;
+        position: absolute;
+        top: 46px;
+        left: 28px;
+        resize: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texto-caja{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 1110px;
+        left: 420px;
+        width: 624;
+    }
+
+    .texto-caja h2{
+        width: 326px;
+        height: 29px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .texto-caja p{
+        width: 328px;
+        height: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+    }
+
+    .encriptar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 240px;
+        top: 950px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 245px;
+        height: 18px;
+        left: 240px;
+        top: 901px;
+    }
+
+    .texto-caja button{
+        box-sizing: border-box;
+        display: flex;
+        padding: 24px;
+        width: 624px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+        top: 30px;
+        left: -149px;
+        order: 1;
+    }*/

@@ -17,6 +17,7 @@
                     document.getElementById("textarea").style.display="inline"; 
                     document.getElementById("textarea").innerHTML = texto;
                     document.getElementById("ingreso-texto").value ="";
+                    document.getElementById("icono").style.display="inline"; 
                     
                     
             }else{

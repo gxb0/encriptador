@@ -11,13 +11,20 @@ header{
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
-
     position: absolute;
     width: 120px;
     height: 48px;
     left: 40px;
-    top: 40px;
+    top: 15px;
     }
+
+header img{
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+}
 
 .area-text{
     position: absolute;
@@ -30,7 +37,7 @@ header{
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: #0A3871;
     opacity: 0.7;
     border: 0;
     /*background-color: transparent;*/
@@ -83,10 +90,12 @@ header{
 }
 
 .caja-contenedora .icono{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 32px;
     height: 32px;
     display: flex;
-    flex-direction: column;
     top: 14px;
     left: 350px;
 }
@@ -215,9 +224,14 @@ header{
     cursor: pointer;
 }
 .button-desencriptar img{
+    box-sizing: border-box;
+    display: flex;
     position: absolute;
     right: 198px;
     top: 18px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .button-desencriptar:hover{
@@ -248,13 +262,12 @@ header{
         height: 600px;
     }*/
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
        
     
     body{
-        position: relative;
-        width: 375px;
-        height: 933px;
+        
+        background-image: url(../image/biometric-bigx.jpg);
     }
 
     header{
@@ -266,9 +279,9 @@ header{
     }
     .area-text{
         position: absolute;
-        width: 900px;
+        width: 677px;
         height: 280px;
-        left: 34px;
+        left: 145px;
         top: 152px;
         font-family: 'Inter';
         font-style: normal;
@@ -277,51 +290,65 @@ header{
         line-height: 150%;
         color: #FFFFFF;
         text-transform: lowercase;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .encriptar{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 0px;
         gap: 24px;
         position: absolute;
-        width: 343px;
+        width: 800px;
         height: 158px;
-        left: 16px;
+        left: 83px;
         top: 485px;
+        justify-content: center;
        
+    }
+    .button-encriptar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 650px;
+    }
+    .button-desencriptar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 650px;
     }
 
     .info{
-        display: flex;
         flex-direction: row;
         align-items: center;
         padding: 0px;
         gap: 8px;
-
         position: absolute;
         width: 245px;
         height: 18px;
-        left: 34px;
+        left: 146px;
         top: 451px;
-
     }
 
     .caja-contenedora{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 32px;
         gap: 32px;
-        position: absolute;
-        width: 270px;
+       margin: 0 auto;
+        width: 557px;
         height: 186px;
-        left: 13px;
+        left: 169px;
         top: 707px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
+        justify-content: center;
     }
 
     .caja-contenedora textarea{
@@ -342,37 +369,59 @@ header{
     .caja-contenedora img{
         display: none;
     }
+
     .texto-caja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
         width: 270px;
         left: 44px;
         top: 759px;
+        margin: 0 auto;
 }
 
-.texto-caja h2{
-    width: 263px;
-    height: 58px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;  
-    color: #343A40;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    .texto-caja h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 263px;
+        height: 58px;
+        margin: 0 auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;  
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
     }
    
     .texto-caja p{
-        width: 230px;
+       
+        width: 205px;
+        height: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
         flex: none;
         order: 1;
-        align-self: stretch;
         flex-grow: 0;
-        text-align: center;
-        margin: 10px auto;
+        
         }
 
+    .caja-contenedora .icono{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 570px;
     }
+}

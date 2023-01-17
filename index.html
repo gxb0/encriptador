@@ -18,20 +18,15 @@
             <textarea name="ingreso-texto" rows="15" cols="45"  id="ingreso-texto" class="area-text"  placeholder="Ingrese el texto aqui" required></textarea>
 
         <div class="caja-contenedora" >
-            
-            
             <textarea name="textarea" rows="30" cols="50" id="textarea" readonly="readonly"></textarea>
             <img src="image/Muñeco.png" id="imagen">
-            <img src="image/archives.png" class="icono" title="Copiar Texto" onclick="copy()">
+            <img src="image/archives.png" class="icono" title="Copiar Texto" onclick="copy()" id="icono" style="display: none;">
             
         </div>
 
         <div class="texto-caja" >
             <h2 id="texto-caja">Ningun mensaje fue encontrado <p>Ingrese el texto que desees encriptar o desencriptar</p></h2> 
-            <!--<div><button id="boton" style="display:none;" onclick="copy()">COPIAR</button></div>-->
         </div>
-
-        <div></div>
 
         <div class="info">
             <img src="image/info-blank.png"><p>Solo letras minisculas y sin acento</p>

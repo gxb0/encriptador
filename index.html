@@ -22,12 +22,13 @@
             
             <textarea name="textarea" rows="30" cols="50" id="textarea" readonly="readonly"></textarea>
             <img src="image/Muñeco.png" id="imagen">
+            <img src="image/archives.png" class="icono" title="Copiar Texto" onclick="copy()">
             
         </div>
 
         <div class="texto-caja" >
             <h2 id="texto-caja">Ningun mensaje fue encontrado <p>Ingrese el texto que desees encriptar o desencriptar</p></h2> 
-            <div><button id="boton" style="display:none;" onclick="copy()">COPIAR</button></div>
+            <!--<div><button id="boton" style="display:none;" onclick="copy()">COPIAR</button></div>-->
         </div>
 
         <div></div>
@@ -37,8 +38,8 @@
         </div>
 
         <div class="encriptar">
-            <button onclick="encriptar()"  class="button-encriptar">Encriptar</button>
-            <button onclick="desencriptar()" class="button-desencriptar">Desencriptar</button>  
+            <button onclick="encriptar()"  class="button-encriptar"><img src="./image/padlock.png">Encriptar</button>
+            <button onclick="desencriptar()" class="button-desencriptar"><img src="./image/candado-abierto.png">Desencriptar</button>  
          </div>
        
         </main> 

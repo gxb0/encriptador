@@ -31,7 +31,7 @@ header img{
     width: 670px;
     height: 339px;
     left: 240px;
-    top: 168px;
+    top: 130px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -174,7 +174,7 @@ header img{
     width: 680px;
     height: 67px;
     left: 240px;
-    top: 600px;
+    top: 617px;
 }
 
 .button-encriptar{
@@ -254,20 +254,33 @@ header img{
     color: #D8DFE8;;
 }
 
-/*@media (min-width: 768px) and (max-width: 1023px){
-    
+    @media only screen and (min-device-width : 1920px) {
+         
     body{
-        position: relative;
-        width: 768px;
-        height: 600px;
-    }*/
+        position: absolute;
+        top:80px;
+        background-image: url(../image/biometric-technology-background-with-fingerprint-scanning-system-on-virtual-screen-digital-remix.jpg);
+        left: 150px;
+    }
 
-    @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    header img{
+        position: absolute;
+        top:-58px;
+    }
+
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
        
     
     body{
         
+        width: 375px;
+        height: 100px;
+      
         background-image: url(../image/biometric-bigx.jpg);
+     
+
     }
 
     header{
@@ -279,8 +292,8 @@ header img{
     }
     .area-text{
         position: absolute;
-        width: 677px;
-        height: 280px;
+        width: 857px;
+        height: 270px;
         left: 145px;
         top: 152px;
         font-family: 'Inter';

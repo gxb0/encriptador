@@ -1,5 +1,3 @@
-
-
         function encriptar(){
               document.getElementById("ingreso-texto").required;
             const frase = document.getElementById("ingreso-texto").value;
@@ -15,7 +13,7 @@
                         .replaceAll(/u/g, "ufat");
                     document.getElementById("texto-caja").style.display = "none";
                     document.getElementById("imagen").style.display = "none";
-                    document.getElementById("boton").style.display = "inline";
+                    /*document.getElementById("boton").style.display = "inline";*/
                     document.getElementById("textarea").style.display="inline"; 
                     document.getElementById("textarea").innerHTML = texto;
                     document.getElementById("ingreso-texto").value ="";
@@ -45,7 +43,7 @@
           
                 document.getElementById("texto-caja").style.display = "none";
                 document.getElementById("imagen").style.display = "none";
-                document.getElementById("boton").style.display = "inline";
+                /*document.getElementById("boton").style.display = "inline";*/
                 document.getElementById("textarea").style.display="inline"; 
                 document.getElementById("textarea").innerHTML = texto;
             

@@ -285,7 +285,7 @@ header img{
     .area-text{
         position: absolute;
         width: 943px;
-        height: 270px;
+        height: 327px;
         left: 18px;
         top: 152px;
         font-family: 'Inter';
@@ -307,9 +307,9 @@ header img{
         padding: 0px;
         gap: 24px;
         position: absolute;
-        height: 158px;
+        height: 206px;
         left: 149px;
-        top: 485px;
+        top: 518px;
         justify-content: center;
        
     }
@@ -317,7 +317,8 @@ header img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 928px;
+        width: 937px;
+       
     }
 
     .button-encriptar img{
@@ -329,11 +330,12 @@ header img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 928px;
+        width: 931px;
+        height: 95px;
     }
     .button-desencriptar img{
         display: flex;
-        top: 108px;
+        top: 127px;
         left: 275px;
         
     }
@@ -346,8 +348,8 @@ header img{
         position: absolute;
         width: 245px;
         height: 18px;
-        left: 164px;
-        top: 451px;
+        left: 42px;
+        top: 491px;
     }
 
     .caja-contenedora{
@@ -356,11 +358,11 @@ header img{
         align-items: center;
         padding: 32px;
         gap: 32px;
-       margin: 0 auto;
-        width: 557px;
+        margin: 0 auto;
+        width: 863px;
         height: 186px;
-        left: 169px;
-        top: 707px;
+        left: 25px;
+        top: 762px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -368,8 +370,8 @@ header img{
     }
 
     .caja-contenedora textarea{
-        width: 279px;
-        height: 162px;
+        width: 869px;
+        height: 179px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -393,7 +395,7 @@ header img{
         position: absolute;
         width: 270px;
         left: 338px;
-        top: 772px;
+        top: 822px;
         margin: 0 auto;
 }
 

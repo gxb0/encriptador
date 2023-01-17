@@ -256,6 +256,8 @@ header img{
         left: 150px;
     }
 
+   
+
     header img{
         position: absolute;
         top:-58px;
@@ -276,11 +278,19 @@ header img{
     }
 
     header{
+        display: flex;
         position: absolute;
         height: 96px;
         left: 4.27%;
         top: 5%;
         bottom: 5%;
+    }
+
+    .principal{
+        display: flex;
+        position: absolute;
+        top: 50px;;
+
     }
     .area-text{
         position: absolute;
@@ -323,8 +333,15 @@ header img{
 
     .button-encriptar img{
         display: flex;
-        left: 280px;
-        top: 18px;
+        left: 276px;
+        top: 24px;
+    }
+
+    .button-encriptar p{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        font-weight: 800;
     }
     .button-desencriptar{
         display: flex;
@@ -333,11 +350,18 @@ header img{
         width: 931px;
         height: 95px;
     }
+
     .button-desencriptar img{
         display: flex;
-        top: 127px;
-        left: 275px;
+        top: 138px;
+        left: 264px;
         
+    }
+    .button-desencriptar p{
+        display: flex;
+        position: absolute;
+        top: 148px;
+        font-weight: 800;
     }
 
     .info{
@@ -346,7 +370,7 @@ header img{
         padding: 0px;
         gap: 8px;
         position: absolute;
-        width: 245px;
+        width: 255px;
         height: 18px;
         left: 42px;
         top: 491px;
@@ -394,7 +418,7 @@ header img{
         align-items: center;
         position: absolute;
         width: 270px;
-        left: 338px;
+        left: 345px;
         top: 822px;
         margin: 0 auto;
 }
@@ -420,12 +444,12 @@ header img{
    
     .texto-caja p{
        
-        width: 205px;
+        width: 226px;
         height: 18px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 21px;
         line-height: 150%;
         color: #495057;
         flex: none;
@@ -434,7 +458,7 @@ header img{
         display: flex;
         position: absolute;
         top: 70px;
-        
+        left: 18px;  
         }
 
     .caja-contenedora .icono{
@@ -443,6 +467,6 @@ header img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        left: 570px;
+        left: 873px;
     }
 }

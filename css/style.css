@@ -40,7 +40,6 @@ header img{
     color: #0A3871;
     opacity: 0.7;
     border: 0;
-    /*background-color: transparent;*/
     outline: none;
     resize: none;
     text-transform: lowercase;
@@ -135,7 +134,6 @@ header img{
 
 .texto-caja p{
     width: 240px;
-    height: 48px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -143,11 +141,8 @@ header img{
     line-height: 150%;
     text-align: center;
     color: #495057;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    
+    display: flex;
+    left: 30px;   
 }
 
 .info{
@@ -178,7 +173,6 @@ header img{
 }
 
 .button-encriptar{
-    /*display: flex;*/
     flex-direction: row;
     align-items: flex-start;
     padding: 24px 134px;
@@ -189,7 +183,6 @@ header img{
     border-radius: 24px;
     flex: 50%;
     order: 0;
-    /*flex-grow: 0;*/
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -275,9 +268,8 @@ header img{
     
     body{
         
-        width: 375px;
-        height: 100px;
-      
+        width: 320px;
+        height: 755px;
         background-image: url(../image/biometric-bigx.jpg);
      
 
@@ -292,18 +284,18 @@ header img{
     }
     .area-text{
         position: absolute;
-        width: 857px;
+        width: 638px;
         height: 270px;
-        left: 145px;
+        left: 161px;
         top: 152px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 150%;
-        color: #FFFFFF;
+        color: #0A3871 ;
         text-transform: lowercase;
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
     }
@@ -343,7 +335,7 @@ header img{
         position: absolute;
         width: 245px;
         height: 18px;
-        left: 146px;
+        left: 164px;
         top: 451px;
     }
 
@@ -389,8 +381,8 @@ header img{
         align-items: center;
         position: absolute;
         width: 270px;
-        left: 44px;
-        top: 759px;
+        left: 338px;
+        top: 772px;
         margin: 0 auto;
 }
 
@@ -426,6 +418,9 @@ header img{
         flex: none;
         order: 1;
         flex-grow: 0;
+        display: flex;
+        position: absolute;
+        top: 70px;
         
         }
 

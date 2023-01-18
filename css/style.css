@@ -252,7 +252,7 @@ header img{
     body{
         position: absolute;
         top:80px;
-        background-image: url(../image/biometric-technology-background-with-fingerprint-scanning-system-on-virtual-screen-digital-remix.jpg);
+         background-image: url(../image/que-es-seguridad-informatica.jpg);
         left: 150px;
     }
 
@@ -319,7 +319,7 @@ header img{
         position: absolute;
         height: 206px;
         left: 149px;
-        top: 518px;
+        top: 532px;
         justify-content: center;
        
     }
@@ -373,7 +373,7 @@ header img{
         width: 255px;
         height: 18px;
         left: 42px;
-        top: 491px;
+        top: 497px;
     }
 
     .caja-contenedora{

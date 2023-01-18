@@ -247,25 +247,8 @@ header img{
     color: #D8DFE8;;
 }
 
-    @media only screen and (min-device-width : 1920px) {
-         
-    body{
-        position: absolute;
-        top:80px;
-         background-image: url(../image/que-es-seguridad-informatica.jpg);
-        left: 150px;
-    }
-
-   
-
-    header img{
-        position: absolute;
-        top:-58px;
-    }
-
-    }
-
-    @media only screen and (min-device-width : 320px) and (max-device-width : 928px) {
+  
+    @media only screen and (min-device-width : 320px) and (max-device-width : 428px) {
        
     
     body{
@@ -470,3 +453,96 @@ header img{
         left: 873px;
     }
 }
+
+@media only screen and (min-device-width : 429px) and (max-device-width : 834px) {
+
+    body{
+        position: relative;
+        display: flexbox;
+        width: 768px;
+        height: 1174px;
+    }
+
+    .principal{
+        display: flex;
+        position: absolute;
+        top: 116px;
+        left: -90px;
+    }
+
+    .caja-contenedora{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 680px;
+        height: 328px;
+        left: 241px;
+        top: 765px;
+    }
+
+    .caja-contenedora textarea{
+        display: flex;
+        position: absolute;
+        padding: 10px;
+        flex: 50%;
+        top: 34px;
+        height: 269px;
+        width: 622px;
+    }
+    
+    .caja-contenedora img{
+        display: none;
+    }
+
+    .texto-caja{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        left: 392px;
+        top: 842px;
+        
+    }
+
+    .texto-caja h2{
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        width: 328px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .texto-caja p{
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        width: 328px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-device-width : 1920px) {
+         
+    body{
+        position: absolute;
+        top:80px;
+         background-image: url(../image/que-es-seguridad-informatica.jpg);
+        left: 150px;
+    }
+
+    header img{
+        position: absolute;
+        top:-58px;
+    }
+
+    }
